@@ -18,7 +18,7 @@ Output: [[],[0]]
 
  */
 
-public class FindAllSubsetOfArray {
+public class GenerateAllSubsetsOfAnArray {
 
     static void printSubsets(int[] arr, List<Integer> ans, int i) {
         // Base case
@@ -45,3 +45,14 @@ public class FindAllSubsetOfArray {
         printSubsets(arr, ans, 0);
     }
 }
+
+/*
+Time Complexity: O(2^n * n)
+- For each element, we choose include/exclude → 2^n subsets
+- Copying subset takes O(n)
+
+
+Space Complexity: O(n)
+- Recursion depth is n
+- Current subset list stores up to n elements
+*/
