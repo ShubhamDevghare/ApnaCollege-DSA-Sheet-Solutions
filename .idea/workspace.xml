@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd44ab31-9c1e-440e-9a04-0b312de5b15d" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/Recursion/N_Queens.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/SudokuSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/Duplicate_Numbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
