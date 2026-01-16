@@ -38,8 +38,8 @@ Explanation: The only possible triplet sums up to 0.
 /*
 💡 Key Idea (Optimal Approach)
 -------------------------------
-Sort + Two Pointers
---------------------
+Sort + Two Pointers (j , k)
+---------------------------
 eg : -1 -4 0  2  1  -1
 1. Sort the array                   -4 -1 -1 0 1 2
 
