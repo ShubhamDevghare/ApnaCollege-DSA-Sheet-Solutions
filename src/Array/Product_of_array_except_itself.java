@@ -35,6 +35,7 @@ We compute this in two passes:
 Left pass → store prefix products
 Right pass → multiply suffix products into the same array
  */
+
 /*
 Algorithm
 ---------
