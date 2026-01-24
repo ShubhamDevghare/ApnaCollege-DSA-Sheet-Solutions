@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd44ab31-9c1e-440e-9a04-0b312de5b15d" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/String/GroupAnagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/StringCompression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/RemoveAllOccurrencesOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/RemoveAllOccurrencesOfString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769252102029</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1769263467357</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1769263467357</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
