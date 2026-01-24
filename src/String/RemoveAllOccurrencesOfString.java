@@ -17,6 +17,19 @@ Explanation: The following operations are done:
 - s = "dababc", remove "abc" starting at index 3, so s = "dab".
 Now s has no occurrences of "abc".
  */
+/*
+
+Algorithm: Remove All Occurrences of part from s
+------------------------------------------------
+1. Initialize an empty string (or stack) result.
+2. Traverse each character c in string s from left to right:
+     - Append c to result.
+     - If the length of result is at least the length of part:
+            - Check whether the last |part| characters of result equal part.
+            - If yes, remove those last |part| characters from result.
+3. After processing all characters, return result.
+ */
+
 public class RemoveAllOccurrencesOfString {
         public String removeOccurrences(String s, String part) {
             StringBuilder sb = new StringBuilder();
@@ -34,11 +47,10 @@ public class RemoveAllOccurrencesOfString {
                             break;
                         }
                     }
-
                     // If matched, remove it
                     if (match) {
-                        sb.delete(sb.length() - m, sb.length());
-                    }
+                        sb.delete(sb.length() - m, sb.length());   //  delete(int start, int end)  :  Description -------->Removes the char at the specified position in this sequence.
+                    }                                             //                               : Modifier and Type -- >  StringBuilder
                 }
             }
 
