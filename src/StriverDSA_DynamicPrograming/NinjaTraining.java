@@ -49,8 +49,8 @@ public class NinjaTraining {
         // Try all activities except the last one
         for (int i = 0; i < 3; i++) {
             if (i != last) {
-                int activity = points[day][i] + f(day - 1, i, points, dp);
-                maxi = Math.max(maxi, activity);
+                int currentTotalPoints = points[day][i] + f(day - 1, i, points, dp);
+                maxi = Math.max(maxi, currentTotalPoints);
             }
         }
 
