@@ -21,6 +21,7 @@ public class TimeNeededToBuyTickets {
         int time = 0;
         int t = tickets[k];
 
+// per 1k vykti kiti vel ghenar ticket ghy sathi  i.e how many times each person gets to buy a ticket
         for (int i = 0; i < tickets.length; i++) {
             if (i <= k) {
                 time += Math.min(tickets[i], t);
@@ -31,3 +32,62 @@ public class TimeNeededToBuyTickets {
         return time;
     }
 }
+/*
+Example
+-------
+tickets = [2, 3, 2]
+k = 2   (person we care about)
+-----------------------------------------------
+Initial queue (index → tickets left):
+[ 0:2 , 1:3 , 2:2 ]
+
+⏱️ Time = 1
+0 buys → tickets left = 1
+Queue becomes:
+[ 1:3 , 2:2 , 0:1 ]
+
+⏱️ Time = 2
+1 buys → tickets left = 2
+Queue:
+[ 2:2 , 0:1 , 1:2 ]
+
+⏱️ Time = 3
+2 (k) buys → tickets left = 1
+Queue:
+[ 0:1 , 1:2 , 2:1 ]
+
+⏱️ Time = 4
+0 buys → tickets left = 0 (leaves)
+Queue:
+[ 1:2 , 2:1 ]
+
+⏱️ Time = 5
+1 buys → tickets left = 1
+Queue:
+[ 2:1 , 1:1 ]
+
+⏱️ Time = 6
+2 (k) buys → tickets left = 0 ✅ DONE
+STOP
+
+
+✅ Answer = 6 seconds
+
+Now… why that loop works 🤯
+
+Let:
+t = tickets[k] = 2
+
+We count how many times each person gets to buy a ticket before k finishes.
+ */
+
+/*
+Mental Picture to Remember 🧠
+=============================
+Everyone buys once per round
+Person k needs t rounds
+People:
+
+Before / at k → can buy in all t rounds
+After k → can only buy in first t - 1 rounds
+ */
